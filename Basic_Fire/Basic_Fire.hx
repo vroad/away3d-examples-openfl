@@ -43,6 +43,7 @@ import openfl.display.*;
 import openfl.events.*;
 import openfl.geom.*;
 import openfl.utils.*;
+import openfl.Vector;
 
 import away3d.animators.*;
 import away3d.animators.data.*;
@@ -160,7 +161,7 @@ class Basic_Fire extends Sprite
 		directionalLight.ambientColor = 0x808090;
 		view.scene.addChild(directionalLight);
 		
-		lightPicker = new StaticLightPicker([directionalLight]);
+		lightPicker = new StaticLightPicker(Vector.ofArray([directionalLight]));
 	}
 	
 	/**
